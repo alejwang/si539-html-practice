@@ -1,0 +1,69 @@
+body{
+	/* margin:1%; */
+	padding: 1%;
+	height: 100vh;
+	weight: 100%;
+	box-sizing: border-box;
+}
+
+.right{
+	float:right;
+	border: 2px solid blue;
+	width: 40%;
+	/* position: relative; */
+	/* top: 50%; */
+	/* transform: translateY(-50%); */
+}
+
+#middle ol li {
+	list-style-type: upper-roman;
+	margin-left: 2em;
+}
+
+
+#middle p  {
+	margin-bottom: 1em;
+}
+
+#middle p span {
+	margin-left: 4em;
+	margin-top: 1em;
+	display: inline-block;
+}
+
+#top{
+	background-color: #7f7f7f;
+	padding: 1%;
+	height: 10%;
+	overflow-y:hidden;
+	weight: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+
+	/*You may need to change the display if white space starts
+	to appear between the top and middle sections.*/
+}
+
+#middle{
+	background-color: #008000;
+	padding:1%;
+	height: 80%;
+	weight: 100%;
+	clear: both;
+	display: inline-block;
+	box-sizing: border-box;
+	/*You need something here to keep the picture of floating
+	to the right of the middle.*/
+}
+
+footer{
+	background-color: pink;
+	padding:1%;
+	height: 10%;
+	weight: 100%;
+	overflow-y: hidden;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+/*You need to style the ordered list selector*/
