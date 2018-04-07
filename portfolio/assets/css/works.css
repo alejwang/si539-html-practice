@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #999999;
+  color: #555555;
   text-decoration: none;
   border-bottom: dotted 1px;
   -webkit-transition: color 0.3s;
@@ -64,12 +64,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 0.7em -0.5em;
   letter-spacing: -0.025em;
-  color: #999999;
+  color: #555555;
 }
 
 h4 {
@@ -430,12 +430,6 @@ footer>* {
   /* width: 60%; */
 }
 
-footer>a {
-  border: 0;
-  padding: 0 0.2em;
-  opacity: 0.4;
-}
-
 footer>.links a {
   font-style: italic;
   font-weight: 200;
@@ -446,9 +440,73 @@ footer>.links a {
 }
 
 footer .copyright {
-  font-size: 0.8em;
-  color: #ccc;
+  color: #555555;
+  letter-spacing: 1px;
   display: inline-block;
+  opacity: 0.8;
+}
+
+footer>a {
+  border: 0;
+  padding: 0 0.2em;
+  opacity: 0.4;
+}
+
+
+/* -------- Preloader -------- */
+
+#preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.no-js #preloader-container, .oldie #preloader-container {
+  display: none;
+}
+
+#preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  padding: 0;
+  background-color: #aaa;
+  border-radius: 100%;
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 

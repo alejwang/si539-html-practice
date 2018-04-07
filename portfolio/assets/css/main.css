@@ -398,9 +398,10 @@ footer {
 }
 
 footer>p {
-  color: #888888;
+  color: #555555;
   letter-spacing: 1px;
   display: inline-block;
+  opacity: 0.8;
 }
 
 footer>a {
@@ -510,6 +511,8 @@ footer>a {
     display: none;
   }
 }
+
+
 /* -------- Preloader -------- */
 
 #preloader-container {
