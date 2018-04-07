@@ -302,8 +302,8 @@ nav ul li a:hover {
   color: black;
 }
 
-nav ul li a.active {
-  color: black;
+nav ul li.active a {
+  color: #FB973A;
 }
 
 .sticky {

@@ -19,6 +19,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<script src="../assets/js/main.js"></script>
+  <script src="../assets/js/jquery.nav.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116480014-1"></script>
@@ -57,7 +58,7 @@
 		<nav id="nav">
 			<a class="nav-home" href="http://alej.wang">_ alejandro.wang</a>
 				<ul class="nav-tab">
-					<li><a href="#intro" class="active">intro</a></li>
+					<li><a href="#intro">intro</a></li>
 					<li><a href="#tech_research">tech research</a></li>
 					<li><a href="#conception">conception</a></li>
 					<li><a href="#prototype">prototype</a></li>
@@ -248,19 +249,27 @@
 
 	<script>
 
-	var stickyOffsetTop = $('#nav').offset().top;
+  $(document).ready(function() {
+    var stickyOffsetTop = $('#nav').offset().top;
 
-	$(window).bind('scroll', function () {
-	    if ($(window).scrollTop() > stickyOffsetTop) {
-	        $('#nav').addClass('sticky');
-					$('#nav').css('background-color', '#ffffff');
-					$('#nav').css('padding', '0 5em');
-	    } else {
-	        $('#nav').removeClass('sticky');
-					$('#nav').css('background-color', '#transparent');
-					$('#nav').css('padding', '0 2.5em');
-	    }
-	});
+  	$(window).bind('scroll', function () {
+  	    if ($(window).scrollTop() > stickyOffsetTop) {
+  	        $('#nav').addClass('sticky');
+  					$('#nav').css('background-color', '#ffffff');
+  					$('#nav').css('padding', '0 5em');
+  	    } else {
+  	        $('#nav').removeClass('sticky');
+  					$('#nav').css('background-color', '#transparent');
+  					$('#nav').css('padding', '0 2.5em');
+  	    }
+  	});
+
+  	$('.nav-tab').onePageNav({
+        currentClass: 'active'
+    });
+  });
+
+
 
 	</script>
 </body>
