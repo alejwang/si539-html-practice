@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #888888;
+  color: #555555;
   text-decoration: none;
   border-bottom: dotted 1px;
   -webkit-transition: color 0.3s;
@@ -130,7 +130,7 @@ nav {
   width: 50%;
   left: 50%;
   padding-top: 6em;
-  margin-bottom: 40vh;
+  margin-bottom: 30vh;
   position: relative;
 }
 
@@ -153,8 +153,9 @@ nav ul li a {
   border: 0;
 }
 
-nav .active {
+nav ul li a.active {
   color: black;
+  border-bottom: 1px solid #cccccc;
 }
 
 nav#sidenav {
@@ -234,7 +235,20 @@ nav#sidenav {
   margin: 2em 0;
 }
 
-.timestamp, .category {
+.category {
+  width: auto;
+  display: block;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+  margin: 3em 0 1em 10em;
+}
+
+.category span.control {
+  border-bottom: 1px dotted #cccccc;
+  cursor: pointer;
+}
+
+.timestamp {
   font-size: 0.8em;
   width: 12.5em;
   float: left;
@@ -263,10 +277,12 @@ hr {
     width: calc(65% + 8em);
     left: calc(35% - 8em);
   }
-  .timestamp, .category {
+  .timestamp {
     width: 10em;
   }
-
+  .category {
+    margin-left: 8em;
+  }
   .description {
     margin-left: 8em;
     width: calc( 100% - 8em);
@@ -285,9 +301,12 @@ hr {
     left: auto;
     padding-left: 3em;
   }
-  .timestamp, .category {
+  .timestamp {
     width: auto;
     float: none;
+  }
+  .category {
+    margin-left: 0;
   }
   .description {
     margin-left: 0;
