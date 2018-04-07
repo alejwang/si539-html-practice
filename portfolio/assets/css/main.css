@@ -565,12 +565,3 @@ footer>a {
     opacity: 0;
   }
 }
-
-/* -------- Mobile View Media -------- */
-
-
-@media (min-width: 1200px) {
-  .work-card {
-    /* height: 300px; */
-  }
-}
