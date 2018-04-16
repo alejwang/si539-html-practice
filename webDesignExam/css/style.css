@@ -1,0 +1,23 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../images/tic-tac-toe.png");
+  background-repeat: repeat;
+}
+
+.container {
+  width: 100%;
+}
+
+img {
+  box-sizing: border-box;
+  width: 50%;
+  border: 5px solid blue;
+  padding: 5%;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}

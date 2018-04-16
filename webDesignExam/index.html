@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zhen Wang's 539 Final</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Zhen Wang</h1>
+      <div class="images">
+        <img id="image1" src="images/examPic.jpg" alt="face"><img id="image2" src="images/UMSI-logo.jpg" alt="umsi logo">
+      </div>
+      <button type="button" name="hide" id="hide">Hide Image</button>
+      <button type="button" name="show" id="show">Show Image</button>
+    </div>
+    <script>
+      $('#hide').click(function() {
+        $('#image1').hide();
+        $('#image2').css('left', '25%');
+      })
+      $('#show').click(function() {
+        $('#image1').show();
+        $('#image2').css('left', 'auto');
+      })
+    </script>
+  </body>
+</html>
